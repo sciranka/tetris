@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tetris</title>
+    <meta name="description" content="Tetris - classic, legendary game written in JavaScript.">
+    <meta name="keywords" content="HTML,CSS,JavaScript,Tetris,webgame">
+    <meta name="author" content="Peter Sciranka">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- FAVICONS -->
+    <link rel="icon" href="./images/favicon16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="./images/favicon32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="./images/favicon96.png" sizes="96x96" type="image/png">
+    <link rel="icon" href="./images/favicon128.png" sizes="128x128" type="image/png">
+    <link rel="icon" href="./images/favicon144.png" sizes="144x144" type="image/png">
+    <link rel="icon" href="./images/favicon196.png" sizes="196x196" type="image/png">
+    <link rel="icon" href="./images/favicon228.png" sizes="228x228" type="image/png">
+    <link rel="icon" href="./images/favicon310.png" sizes="310x310" type="image/png">
+    <link rel="icon" href="./images/android-chrome-192x192.png" sizes="192x192" type="image/png">
+    <link rel="icon" href="./images/android-chrome-512x512.png" sizes="512x512" type="image/png">
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" sizes="180x180" type="image/png">
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon-60x60.png" sizes="60x60" type="image/png">
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon-76x76.png" sizes="76x76" type="image/png">
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon-120x120.png" sizes="120x120" type="image/png">
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon-152x152.png" sizes="152x152" type="image/png">
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon-167x167.png" sizes="167x167" type="image/png">
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon-180x180.png" sizes="180x180" type="image/png">
+</head>
+
+<body>
+    <!-- MODALS -->
+    <div id="modal">
+        <div class="modalItemContainer" id="modalLevel">
+            <div class="modalItem modalItemL" id="modalLevel_1">1</div>
+            <div class="modalItem modalItemL" id="modalLevel_2">2</div>
+            <div class="modalItem modalItemL" id="modalLevel_3">3</div>
+            <div class="modalItem modalItemL" id="modalLevel_4">4</div>
+            <div class="modalItem modalItemL" id="modalLevel_5">5</div>
+            <div class="modalItem modalItemL" id="modalLevel_6">6</div>
+            <div class="modalItem modalItemL" id="modalLevel_7">7</div>
+            <div class="modalItem modalItemL" id="modalLevel_8">8</div>
+            <div class="modalItem modalItemL" id="modalLevel_9">9</div>
+        </div>
+        <div class="modalItemContainer" id="modalRows">
+            <div class="modalItem modalItemR" id="modalRow_0">0</div>
+            <div class="modalItem modalItemR" id="modalRow_1">1</div>
+            <div class="modalItem modalItemR" id="modalRow_2">2</div>
+            <div class="modalItem modalItemR" id="modalRow_3">3</div>
+            <div class="modalItem modalItemR" id="modalRow_4">4</div>
+            <div class="modalItem modalItemR" id="modalRow_5">5</div>
+            <div class="modalItem modalItemR" id="modalRow_6">6</div>
+            <div class="modalItem modalItemR" id="modalRow_7">7</div>
+            <div class="modalItem modalItemR" id="modalRow_8">8</div>
+        </div>
+    </div>
+    <!-- CONTROLS -->
+    <div id="controls">
+        <div id="controlsButtons">
+            <div id="startButton" class="btn">NEW GAME</div>
+            <div id="levelButton" class="btn">Level: <span id="levelNumberView">5</span></div>
+            <div id="rowsButton" class="btn">Rows: <span id="rowsNumberView">8</span></div>
+        </div>
+        <div id="controlsInfo">
+            <p>pause (continue): ESC / p</p>
+            <p>move: left, right arrow</p>
+            <p>rotate: up arrow</p>
+        </div>
+    </div>
+    <!-- PLAYGROUND -->
+    <div id="mainContent">
+        <h1>
+            <span id="mainHeading">Tetris</span>
+            <span id="filledRowsView"></span>
+        </h1>
+        <div id="playground"></div>
+        <div id="touchControlsButtons">
+            <div class="touchControlItem" id="touchArrowLeft"><i class="left"></i></div>
+            <div class="touchControlItem" id="touchArrowUp"><i class="up"></i></div>
+            <div class="touchControlItem" id="touchArrowDown"><i class="down"></i></div>
+            <div class="touchControlItem" id="touchArrowRight"><i class="right"></i></div>
+        </div>
+    </div>
+
+
+    <script src="js/main-min.js"></script>
+</body>
+
+</html>
